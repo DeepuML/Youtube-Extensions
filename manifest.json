@@ -7,10 +7,10 @@
         "default_popup": "popup.html"
     },
     "permissions": [
-    //     "tabs",
-    //     "activeTab",
-        "scripting"
-        // "http://localhost/*",
-        // "https://www.googleapis.com/*"
+        "tabs",
+        "activeTab",
+        "scripting",
+        "http://localhost/*",
+        "https://www.googleapis.com/*"
     ]
 }

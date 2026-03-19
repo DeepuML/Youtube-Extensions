@@ -1,0 +1,123 @@
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+    color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 280px;
+    margin: 0 auto;
+    padding: 24px;
+    background: rgba(34, 40, 49, 0.95);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #ff1744;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #00bcd4;
+    margin-bottom: 8px;
+}
+
+.metrics-container {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.metric {
+    background: #222831;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    padding: 12px 18px;
+    min-width: 120px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.metric-title {
+    font-size: 0.9rem;
+    color: #b0bec5;
+    margin-bottom: 4px;
+}
+
+.metric-value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.comment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comment-item {
+    background: #393e46;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px 14px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.comment-sentiment {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-top: 2px;
+    padding: 2px 8px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.comment-sentiment[data-sentiment="1"] {
+    background: #43ea7c;
+    color: #222;
+}
+
+.comment-sentiment[data-sentiment="0"] {
+    background: #ffd600;
+    color: #222;
+}
+
+.comment-sentiment[data-sentiment="-1"] {
+    background: #ff1744;
+    color: #fff;
+}
+
+#chart-container img,
+#trend-graph-container img,
+#wordcloud-container img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #232526;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #393e46;
+    border-radius: 8px;
+}
